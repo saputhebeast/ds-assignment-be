@@ -1,0 +1,32 @@
+server:
+  port: 7000
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: com.microservices.notification.service
+
+notification:
+  mail:
+    password: qvvo bnal rcle vqiv
+    username: heshanthzimmendra@gmail.com
+    cc: it21265242@my.sliit.lk
+    bcc: newchattabotta@gmail.com
+
+  text:
+    api:
+      url: https://app.notify.lk/api/v1/send?user_id=[USER_ID]&api_key=[API_KEY]&sender_id=NotifyDEMO&to=[TO]&message=[MESSAGE]
+      key: e1gL2WZfflzkOjzoUmTy
+    user:
+      id: 27143
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      probes:
+        enabled: true

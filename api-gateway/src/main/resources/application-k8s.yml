@@ -1,0 +1,9 @@
+# application-k8s.yml
+address:
+  base:
+    user-service: http://user-service:80
+    course-service: http://course-service:80
+    content-service: http://content-service:80
+    enrollment-service: http://enrollment-service:80
+    notification-service: http://notification-service:80
+    payment-service: http://payment-service:80

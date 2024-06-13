@@ -1,0 +1,8 @@
+feign:
+  url:
+    user: http://user-service:80
+    course: http://course-service:80
+    course-content: http://course-content-service:80
+    enrollment: http://enrollment-service:80
+    notification: http://notification-service:80
+    payment: http://payment-service:80

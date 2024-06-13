@@ -1,0 +1,21 @@
+server:
+  port: 8200
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: course-content-service
+  data:
+    mongodb:
+      uri: mongodb+srv://shabina:password321@cluster0.jxpty5s.mongodb.net/e-academy?retryWrites=true&w=majority&appName=Cluster0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      probes:
+        enabled: true

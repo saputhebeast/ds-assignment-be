@@ -1,0 +1,26 @@
+server:
+  port: 8000
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: user-service
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:2lgiIC4opKrZ2jVR@cluster0.vzb0mdl.mongodb.net/user-service
+
+jwt:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+    expirationMs: 3600000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      probes:
+        enabled: true

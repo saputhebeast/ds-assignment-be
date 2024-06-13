@@ -1,0 +1,21 @@
+server:
+  port: 8100
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: course-service
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:2lgiIC4opKrZ2jVR@cluster0.vzb0mdl.mongodb.net/course-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      probes:
+        enabled: true

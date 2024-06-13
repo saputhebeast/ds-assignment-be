@@ -1,0 +1,9 @@
+# application-local.yml
+address:
+  base:
+    user-service: http://localhost:8000
+    course-service: http://localhost:8100
+    content-service: http://localhost:8200
+    enrollment-service: http://localhost:8300
+    notification-service: http://localhost:7000
+    payment-service: http://localhost:3000

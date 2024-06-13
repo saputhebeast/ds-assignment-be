@@ -1,0 +1,21 @@
+server:
+  port: 8300
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: enrollment-service
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:2lgiIC4opKrZ2jVR@cluster0.vzb0mdl.mongodb.net/enrollment-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      probes:
+        enabled: true
